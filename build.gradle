@@ -1,0 +1,24 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '6.0.0'
+    id 'java'
+    id 'application'
+}
+
+group 'xyz.andrewtran.falcon'
+version '0.0.1'
+sourceCompatibility = 14
+targetCompatibility = 14
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile 'org.jsoup:jsoup:1.13.1'
+    compile 'net.dv8tion:JDA:4.2.0_212'
+}
+
+application {
+    mainClassName = 'xyz.andrewtran.falcon.FalconBot'
+}
